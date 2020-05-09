@@ -30,7 +30,8 @@ namespace ConvertLinqApplication.Controllers
             _encode = encode;
             _accessor = accessor;
         }
-        public async Task<string> PostSetUrlAsync([FromBody] string mainUrl)
+        public async Task<string> PostSetUrlAsync([FromHeader] string mainUrl)
+        //get mainUrl in Header 
         {
             var entity = new Url
             {
@@ -56,7 +57,7 @@ namespace ConvertLinqApplication.Controllers
 
         [HttpGet]
         public async Task<string> GetConvertedUrlAsync(String convertedUrl)
-
+            //get convertedUrl in params 
         {
             if (convertedUrl!=null)
             {        
@@ -66,45 +67,46 @@ namespace ConvertLinqApplication.Controllers
                 if (Url!=null)
                 {
                    
-                    var Visits = (await _UW.BaseRepository<Visit>().FindByConditionAsync(v => v.UrlId == UrlId && v.UserIP==IP)).FirstOrDefault();
-                    //if (Visits.)
-                    //{ }
-                    if (Visits.UserIP == null)
-                    {
+                    var Visits = (await _UW.BaseRepository<Visit>().FindByConditionAsync(v => v.UrlId == UrlId )).FirstOrDefault();
+                 
 
-                        Visits.CountVisit = 1;
-                        Visits.DateTimeVisit = DateTime.Now;
-                        Visits.UserIP = IP;
-                        _UW.BaseRepository<Visit>().Update(Visits);
-
-                    }
-
-                    else 
-                    {
-                        if (Visits.UserIP == IP)
+                        if (Visits.UserIP == null)
                         {
-                            Visits.CountVisit += 1;
+
+                            Visits.CountVisit = 1;
+                            Visits.DateTimeVisit = DateTime.Now;
+                            Visits.UserIP = IP;
                             _UW.BaseRepository<Visit>().Update(Visits);
+
                         }
+
                         else
                         {
-                            var newVisit = new Visit
+                            if (Visits.UserIP == IP)
                             {
-                                CountVisit = 1,
-                                UserIP = IP,
-                                DateTimeVisit = DateTime.Now,
-                                UrlId = UrlId
+                                Visits.CountVisit += 1;
+                                _UW.BaseRepository<Visit>().Update(Visits);
+                            }
+                            else
+                            {
+                                var newVisit = new Visit
+                                {
+                                    CountVisit = 1,
+                                    UserIP = IP,
+                                    DateTimeVisit = DateTime.Now,
+                                    UrlId = UrlId
 
-                            };
-                            await _UW.BaseRepository<Visit>().CreateAsync(newVisit);
-                        }
-                     
+                                };
+                                await _UW.BaseRepository<Visit>().CreateAsync(newVisit);
+                            }
+
+                        
                     }
-                   
+              
                     await _UW.Commit();
                     return Url.MainUrl; 
                 }
-              
+               
             }
 
             return "وجود ندارد";
@@ -113,7 +115,8 @@ namespace ConvertLinqApplication.Controllers
         [HttpGet("VisitorReport")]
         public async Task<IActionResult> GetVisitorReportAsync([FromHeader]string UserIP)
         {
-           //if you call this method without userIP in header it try to return all of visits
+            //get UserIP in header
+            //if you call this method without userIP in header it try to return all of visits
             if (UserIP == null)
             {
               
