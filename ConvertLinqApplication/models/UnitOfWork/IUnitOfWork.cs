@@ -8,7 +8,7 @@ namespace ConvertLinqApplication.models.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        DatabaseContext Context { get; }
+        DatabaseContext _Context { get; }
       
         IRepositoryBase<TEntity> BaseRepository<TEntity>() where TEntity : class;
         Task Commit();

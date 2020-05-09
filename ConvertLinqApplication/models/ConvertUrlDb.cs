@@ -22,10 +22,15 @@ namespace ConvertLinqApplication.models
 
     public class Visit
     {
+        [Key]
         public int VisitId { get; set; }
         public int CountVisit { get; set; }
+
+        public string UserIP { get; set; }
+
+        public DateTime DateTimeVisit { get; set; }
         [ForeignKey("Url")]
-        public int UserId { get; set; }
+        public int UrlId { get; set; }
         public Url Url { get; set; }
 
 

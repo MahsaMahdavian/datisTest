@@ -10,9 +10,6 @@ namespace ConvertLinqApplication.models.UnitOfWork
     {
         public DatabaseContext _Context { get; }
 
-        public DatabaseContext Context => throw new NotImplementedException();
-
-
         public UnitOfWork(DatabaseContext Context)
         {
             _Context = Context;

@@ -37,18 +37,8 @@ namespace ConvertLinqApplication.Classes
             return i;
         }
 
-        //public static void Main(string[] args)
-        //{
-        //    // Simple test of encode/decode operations
-        //    for (var i = 0; i < 10000; i++)
-        //    {
-        //        if (Decode(Encodeint(i)) != i)
-        //        {
-        //            System.Console.WriteLine("{0} is not {1}", Encodeint(i), i);
-        //            break;
-        //        }
-        //    }
-        //}
-    
-}
+        
+       
+
+    }
 }

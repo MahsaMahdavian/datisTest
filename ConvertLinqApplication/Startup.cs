@@ -7,6 +7,8 @@ using ConvertLinqApplication.models;
 using ConvertLinqApplication.models.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -32,6 +34,7 @@ namespace ConvertLinqApplication
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IEncode, Encode>();
             services.AddTransient<DatabaseContext>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +50,9 @@ namespace ConvertLinqApplication
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseForwardedHeaders(new ForwardedHeadersOptions { ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto });
+
+            
 
             app.UseEndpoints(endpoints =>
             {
