@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ConvertLinqApplication.Classes;
 using ConvertLinqApplication.models;
 using ConvertLinqApplication.models.UnitOfWork;
+using ConvertLinqApplication.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -16,7 +17,7 @@ using Microsoft.Extensions.Primitives;
 namespace ConvertLinqApplication.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ConvertURLController : ControllerBase
     {
        
@@ -30,7 +31,7 @@ namespace ConvertLinqApplication.Controllers
             _encode = encode;
             _accessor = accessor;
         }
-        public async Task<string> PostSetUrlAsync([FromHeader] string mainUrl)
+        public async Task<ApiResult<string>> PostSetUrlAsync([FromHeader] string mainUrl)
         //get mainUrl in Header 
         {
             var entity = new Url
@@ -56,7 +57,7 @@ namespace ConvertLinqApplication.Controllers
         }
 
         [HttpGet]
-        public async Task<string> GetConvertedUrlAsync(String convertedUrl)
+        public async Task<ApiResult<string>> GetConvertedUrlAsync(String convertedUrl)
             //get convertedUrl in params 
         {
             if (convertedUrl!=null)
@@ -113,7 +114,7 @@ namespace ConvertLinqApplication.Controllers
         }
 
         [HttpGet("VisitorReport")]
-        public async Task<IActionResult> GetVisitorReportAsync([FromHeader]string UserIP)
+        public async Task<ActionResult> GetVisitorReportAsync([FromHeader]string UserIP)
         {
             //get UserIP in header
             //if you call this method without userIP in header it try to return all of visits
@@ -133,7 +134,7 @@ namespace ConvertLinqApplication.Controllers
               var result2 = (await _UW.BaseRepository<Visit>().FindByConditionAsync(v => v.UserIP == UserIP)).FirstOrDefault();
                 if (result2==null)
                 {
-                    return NotFound(UserIP);
+                    return NotFound("این کاربر در دیتابیس وجود ندارد");
                 }
                 return Ok(result2);
             }

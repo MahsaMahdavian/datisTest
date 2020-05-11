@@ -1,3 +1,6 @@
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csprojAssemblyReference.cache
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csproj.CoreCompileInputs.cache
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.AssemblyInfoInputs.cache
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.AssemblyInfo.cs
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -120,6 +123,3 @@ C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debu
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.pdb
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.genruntimeconfig.cache
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csprojAssemblyReference.cache
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csproj.CoreCompileInputs.cache
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.MvcApplicationPartsAssemblyInfo.cache
