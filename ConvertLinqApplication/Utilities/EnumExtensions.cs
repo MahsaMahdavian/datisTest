@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ConvertLinqApplication.Classes;
 using System.Reflection;
 
-namespace ConvertLinqApplication.Utilities
+namespace ConvertLinqApplication.Filter
 {
     public static class EnumExtensions
     {

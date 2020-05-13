@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConvertLinqApplication.Utilities
+namespace ConvertLinqApplication.Filter
 {
     public class Assert
     {

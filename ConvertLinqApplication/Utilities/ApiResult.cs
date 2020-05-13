@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 
-namespace ConvertLinqApplication.Utilities
+namespace ConvertLinqApplication.Filter
 {
     public class ApiResult
     {

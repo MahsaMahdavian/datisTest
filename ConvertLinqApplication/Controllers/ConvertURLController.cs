@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ConvertLinqApplication.Classes;
 using ConvertLinqApplication.models;
 using ConvertLinqApplication.models.UnitOfWork;
-using ConvertLinqApplication.Utilities;
+using ConvertLinqApplication.Filter;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -18,6 +18,7 @@ namespace ConvertLinqApplication.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    
     public class ConvertURLController : ControllerBase
     {
        
@@ -110,7 +111,7 @@ namespace ConvertLinqApplication.Controllers
                
             }
 
-            return "وجود ندارد";
+            return BadRequest("وجود ندارد");
         }
 
         [HttpGet("VisitorReport")]
