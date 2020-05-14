@@ -13,12 +13,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.Extensions.Primitives;
+using ConvertLinqApplication.Services;
 
-namespace ConvertLinqApplication.Controllers
+namespace ConvertLinqApplication.Controllers.v1
 {
     [ApiController]
     [Route("api/[controller]")]
-    
+    [ApiVersion("1.0")]
     public class ConvertURLController : ControllerBase
     {
        
@@ -26,13 +27,15 @@ namespace ConvertLinqApplication.Controllers
         private IUnitOfWork _UW;
         private readonly IEncode _encode;
         private IHttpContextAccessor _accessor;
-        public ConvertURLController(IUnitOfWork UW, IEncode encode, IHttpContextAccessor accessor)
+        private  IjwtService _jwtService;
+        public ConvertURLController(IUnitOfWork UW, IEncode encode, IHttpContextAccessor accessor, IjwtService jwtService)
         {
             _UW = UW;
             _encode = encode;
             _accessor = accessor;
+            _jwtService = jwtService;
         }
-        public async Task<ApiResult<string>> PostSetUrlAsync([FromHeader] string mainUrl)
+        public virtual async Task<ApiResult<string>> PostSetUrlAsync([FromHeader] string mainUrl)
         //get mainUrl in Header 
         {
             var entity = new Url
@@ -58,7 +61,7 @@ namespace ConvertLinqApplication.Controllers
         }
 
         [HttpGet]
-        public async Task<ApiResult<string>> GetConvertedUrlAsync(String convertedUrl)
+        public virtual async Task<ApiResult<string>> GetConvertedUrlAsync(String convertedUrl)
             //get convertedUrl in params 
         {
             if (convertedUrl!=null)
@@ -115,7 +118,7 @@ namespace ConvertLinqApplication.Controllers
         }
 
         [HttpGet("VisitorReport")]
-        public async Task<ActionResult> GetVisitorReportAsync([FromHeader]string UserIP)
+        public virtual async Task<ActionResult> GetVisitorReportAsync([FromHeader]string UserIP)
         {
             //get UserIP in header
             //if you call this method without userIP in header it try to return all of visits
@@ -144,7 +147,7 @@ namespace ConvertLinqApplication.Controllers
           
         }
 
-
+        
         private string UserIp()
         {
             var result = string.Empty;
@@ -165,6 +168,14 @@ namespace ConvertLinqApplication.Controllers
                 result = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
             return result;
 
+        }
+
+        [HttpGet("test")]
+        public int test()
+        {
+            int i = 0;
+            int num = 54 / i;
+            return num;
         }
     }
 }

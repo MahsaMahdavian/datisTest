@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 
 
-namespace ConvertLinqApplication.Controllers
+namespace ConvertLinqApplication.Controllers.v2
 {
     [Route("api/[controller]")]
     [ApiController]
