@@ -1,5 +1,11 @@
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csproj.CoreCompileInputs.cache
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.AssemblyInfoInputs.cache
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.AssemblyInfo.cs
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.RazorTargetAssemblyInfo.cache
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.dll
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.pdb
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -9,6 +15,7 @@ C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debu
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\ConvertLinqApplication.runtimeconfig.dev.json
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\ConvertLinqApplication.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\ConvertLinqApplication.pdb
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -35,6 +42,9 @@ C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debu
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -51,6 +61,7 @@ C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debu
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
@@ -113,19 +124,7 @@ C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debu
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.RazorTargetAssemblyInfo.cache
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csproj.CopyComplete
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\staticwebassets\ConvertLinqApplication.StaticWebAssets.Manifest.cache
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\staticwebassets\ConvertLinqApplication.StaticWebAssets.xml
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.dll
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.pdb
 C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.genruntimeconfig.cache
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csproj.CoreCompileInputs.cache
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\110\source\repos\ConvertLinqApplication\ConvertLinqApplication\obj\Debug\netcoreapp3.1\ConvertLinqApplication.csprojAssemblyReference.cache
