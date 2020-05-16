@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading;
 using System.Threading.Tasks;
+using ConvertLinqApplication.Filter;
 using ConvertLinqApplication.models.Repository;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,8 +12,11 @@ namespace ConvertLinqApplication.models
 {
     public class RepositoryBase<TEntity, TContext> : IRepositoryBase<TEntity> where TEntity:class  where TContext : DbContext
     {
+        //protected readonly ApplicationDbContext DbContext;
         protected TContext _Context { get; set; }
         private DbSet<TEntity> dbSet;
+        public virtual IQueryable<TEntity> Table => dbSet;
+        public virtual IQueryable<TEntity> TableNoTracking => dbSet.AsNoTracking();
         public RepositoryBase(TContext Context)
         {
             _Context = Context;
@@ -51,10 +56,18 @@ namespace ConvertLinqApplication.models
             await dbSet.AddAsync(entity);
         }
 
-        public void Update(TEntity entity) => dbSet.Update(entity);
+       
 
+        public void Update(TEntity entity) => dbSet.Update(entity);
+        public virtual async Task UpdateAsync(TEntity entity, CancellationToken cancellationToken, bool saveNow = true)
+        {
+            Assert.NotNull(entity, nameof(entity));
+            dbSet.Update(entity);
+            if (saveNow)
+                await _Context.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
+        }
         public void Delete(TEntity entity) => dbSet.Remove(entity);
 
-      
+        
     }
 }

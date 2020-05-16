@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
-
+using Microsoft.Extensions.Hosting;
 
 namespace ConvertLinqApplication.Middlewares
 {
@@ -23,8 +23,8 @@ namespace ConvertLinqApplication.Middlewares
     public class CustomExceptionHandlerMiddleware
     {
         private readonly RequestDelegate _next;
-        private readonly IHostingEnvironment _env;
-        public CustomExceptionHandlerMiddleware(RequestDelegate next, IHostingEnvironment env)
+        private readonly IWebHostEnvironment _env;
+        public CustomExceptionHandlerMiddleware(RequestDelegate next, IWebHostEnvironment env)
         {
             _next = next;
             _env = env;
