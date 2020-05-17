@@ -1183,6 +1183,15 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "Pluralize.NET/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Pluralize.NET.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pluralize.NET.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -4621,6 +4630,22 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "Pluralize.NET/1.0.2": {
+      "sha512": "kr/sOAem5NPH7Ft0tNiaQOO7f/W7ExcLRERpgvg5BlVZimQ/d/MCxhnwnk+WL4dy5Bj/KjToHUl1azYYDfqzpA==",
+      "type": "package",
+      "path": "pluralize.net/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Pluralize.NET.dll",
+        "lib/net451/Pluralize.NET.dll",
+        "lib/net46/Pluralize.NET.dll",
+        "lib/netstandard1.1/Pluralize.NET.dll",
+        "lib/netstandard2.0/Pluralize.NET.dll",
+        "pluralize.net.1.0.2.nupkg.sha512",
+        "pluralize.net.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -9076,6 +9101,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.3",
       "Microsoft.Extensions.Identity.Core >= 3.1.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.2",
+      "Pluralize.NET >= 1.0.2",
       "System.ComponentModel.Annotations >= 4.7.0",
       "System.IdentityModel.Tokens.Jwt >= 6.5.1"
     ]
@@ -9154,6 +9180,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.2, )"
+          },
+          "Pluralize.NET": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "System.ComponentModel.Annotations": {
             "target": "Package",

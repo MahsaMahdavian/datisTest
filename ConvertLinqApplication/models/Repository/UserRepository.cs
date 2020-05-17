@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ConvertLinqApplication.Exceptions;
 using ConvertLinqApplication.Identity;
 using ConvertLinqApplication.Utilities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 

@@ -13,6 +13,7 @@ namespace ConvertLinqApplication.Identity
         {
             IsActive = true;
         }
+    
         [Required]
         [StringLength(100)]
         public string FullName { get; set; }

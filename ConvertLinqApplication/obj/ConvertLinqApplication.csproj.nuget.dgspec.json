@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
+            "Pluralize.NET": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
             "System.ComponentModel.Annotations": {
               "target": "Package",
               "version": "[4.7.0, )"

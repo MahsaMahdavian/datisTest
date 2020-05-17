@@ -8,6 +8,6 @@ namespace ConvertLinqApplication.Services
 {
     public interface IjwtService
     {
-         Task<string> GenerateToken(User use);
+         //Task<string> GenerateToken(User use);
     }
 }

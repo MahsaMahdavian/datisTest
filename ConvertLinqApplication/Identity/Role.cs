@@ -11,6 +11,7 @@ namespace ConvertLinqApplication.Identity
 {
     public class Role : IdentityRole<int>,IEntity
     {
+   
         [Required]
         [StringLength(100)]
         public string Description { get; set; }

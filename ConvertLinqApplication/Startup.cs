@@ -33,9 +33,9 @@ namespace ConvertLinqApplication
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IEncode, Encode>();
             services.AddTransient<DatabaseContext>();
-            services.AddTransient<IjwtService, jwtService>();
+            //services.AddTransient<IjwtService, jwtService>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-          //  services.AddCustomIdentity(_siteSetting.IdentitySettings);
+           // services.AddCustomIdentity(_siteSetting.IdentitySettings);
             services.AddApiVersioning(opt =>
             {
                 opt.ReportApiVersions = true;
@@ -70,16 +70,18 @@ namespace ConvertLinqApplication
 
             app.UseRouting();
 
-            app.UseAuthorization();
+      
             app.UseForwardedHeaders(new ForwardedHeadersOptions { ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto });
 
-            
 
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-          
+           
+
         }
     }
 }
